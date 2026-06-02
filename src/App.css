@@ -1,0 +1,40 @@
+@import "tailwindcss";
+
+@font-face {
+    font-family: 'logo';
+    src: url(assets/Font/Swiggy-Bold.woff2);
+}
+.font-logo {
+  font-family: "logo";
+}
+
+@font-face {
+    font-family: 'menu';
+    src: url(assets/Font/Nunito-VariableFont_wght.ttf);
+}
+.font-menu {
+  font-family: "menu";
+}
+
+@font-face {
+    font-family: 'nav';
+    src: url(assets/Font/DMSans-VariableFont_opsz,wght.ttf);
+}
+.font-nav {
+  font-family: "nav";
+}
+
+
+@keyframes marquee {
+  from {
+    transform: translateX(0%);
+  }
+
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-marquee {
+  animation: marquee 50s linear infinite;
+}
