@@ -1,5 +1,5 @@
 
-import '/Users/ShriSudhanBoobathi/Desktop/Portfolio/src/App.css';
+import "./App.css";
 import logo from './assets/Image/logo.png'
 import Avatar from './assets/Image/Avatar.png'
 import left from './assets/Image/leftArrow.png'
