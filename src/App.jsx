@@ -2,6 +2,7 @@
 import "./App.css";
 import logo from './assets/Image/logo.png'
 import Avatar from './assets/Image/Avatar.png'
+import Avatar2 from './assets/Image/Avatar2.png'
 import left from './assets/Image/leftArrow.png'
 import right from './assets/Image/RightArrow.png'
 
@@ -64,11 +65,11 @@ function App() {
             <div className="overflow-hidden whitespace-nowrap">
               <div className="inline-flex animate-marquee">
 
-                <span className="text-[250px] font-logo text-transparent [-webkit-text-stroke:2px_rgba(255,255,255,0.15)]">
+                <span className="text-[250px] font-menu text-transparent [-webkit-text-stroke:2px_rgba(255,255,255,0.15)]">
                   UI/UX UI/UX UI/UX UI/UX UI/UX
                 </span>
 
-                <span className="text-[250px] font-logo  text-transparent [-webkit-text-stroke:2px_rgba(255,255,255,0.15)]">
+                <span className="text-[250px] font-menu  text-transparent [-webkit-text-stroke:2px_rgba(255,255,255,0.15)]">
                   UI/UX UI/UX UI/UX UI/UX UI/UX
                 </span>
 
@@ -111,7 +112,45 @@ function App() {
             </div>
             <img src={right} alt="right arrow" />
         </div>
+        <div className="about mt-15">
+           <div className="relative w-1/3 h-[500px] overflow-hidden flex items-center">
+
+            {/* Image */}
+            <img
+              src={Avatar2}
+              alt=""
+              className="
+                absolute
+                left-1/2
+                top-1/2
+                -translate-x-1/2
+                -translate-y-1/2
+                z-20
+                h-[550px]
+                object-contain
+                pointer-events-none
+              "
+            />
+
+            {/* Moving Text */}
+            <div className="overflow-hidden whitespace-nowrap">
+              <div className="inline-flex animate-marquee">
+
+                <span className="text-[250px] font-menu text-transparent [-webkit-text-stroke:2px_rgba(255,255,255,0.15)]">
+                  ABOUT ABOUT ABOUT ABOUT ABOUT
+                </span>
+
+                <span className="text-[250px] font-menu  text-transparent [-webkit-text-stroke:2px_rgba(255,255,255,0.15)]">
+                  ABOUT ABOUT ABOUT ABOUT ABOUT
+                </span>
+
+              </div>
+            </div>
+
+          </div>
       </div>
+      </div>
+      
     </>
   )
 }
