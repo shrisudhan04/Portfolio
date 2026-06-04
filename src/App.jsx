@@ -1,11 +1,11 @@
 
-import './App.css'
+import '/Users/ShriSudhanBoobathi/Desktop/Portfolio/src/App.css';
 import logo from './assets/Image/logo.png'
 import Avatar from './assets/Image/Avatar.png'
 import left from './assets/Image/leftArrow.png'
 import right from './assets/Image/RightArrow.png'
 
-function Landing() {
+function App() {
   return (
     <>
       <div className="bo bg-[radial-gradient(circle_at_75%_35%,rgba(255,0,0,0.25)_0%,rgba(120,0,0,0.15)_30%,transparent_65%),radial-gradient(circle_at_50%_50%,rgba(70,0,0,0.08)_0%,transparent_70%),linear-gradient(90deg,#080808_0%,#0d0708_50%,#120304_100%)] h-auto w-full">
@@ -30,7 +30,7 @@ function Landing() {
 
 
         </div>
-        <div className="landing flex  items-center justify-between mt-10 px-15">
+        <div className="App flex  items-center justify-between mt-10 px-15">
           <div className="title flex flex-col items-start gap-4">
             <div className="text-6xl font-menu text-white">Turning  <span className="text-[#ff0000]"> Ideas  </span>Into </div>
             <div className="text-6xl font-menu text-white">Digital Reality</div>
@@ -116,4 +116,4 @@ function Landing() {
   )
 }
 
-export default Landing
+export default App
