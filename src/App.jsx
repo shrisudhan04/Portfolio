@@ -1,11 +1,13 @@
 import { useState } from "react";
 import "./App.css";
-
+import Dropdown from 'react-bootstrap/Dropdown';
 import logo from "./assets/Image/logo.png";
 import Avatar from "./assets/Image/Avatar.png";
 import Avatar2 from "./assets/Image/Avatar2.png";
 import left from "./assets/Image/leftArrow.png";
 import right from "./assets/Image/RightArrow.png";
+import mobile1 from "./assets/Image/MobileAvatar.png";
+import mobile2 from "./assets/Image/mobile2.png";
 
 function App() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -73,7 +75,7 @@ function App() {
       <div className="flex flex-col-reverse lg:flex-row items-center justify-between px-4 md:px-8 lg:px-15 py-10">
 
         {/* LEFT CONTENT */}
-        <div className="flex flex-col items-start gap-2 w-fit lg:w-1/2">
+        <div className="flex flex-col items-start gap-2 w-fit lg:w-1/2 md:mt-0 mt-2">
 
           <div className="font-menu text-white text-sm md:text-base">
             Hello, I'm <span className="text-[#ff0000]">Sudhan</span>
@@ -147,7 +149,7 @@ function App() {
               className="w-8 md:w-auto"
             />
           </div>
-        </div>
+      </div>
 
         {/* HERO IMAGE */}
         <div className="relative w-full lg:w-1/2 h-[300px] md:h-[450px] lg:h-[500px] overflow-hidden flex items-center justify-center">
@@ -155,7 +157,12 @@ function App() {
           <img
             src={Avatar}
             alt=""
-            className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 z-20 h-[280px] md:h-[550px] lg:h-[550px] object-contain pointer-events-none"
+            className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 z-20 h-[280px] hidden md:block lg:h-[550px] object-contain pointer-events-none"
+          />
+          <img
+            src={mobile1}
+            alt=""
+            className="absolute fade-image left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 z-20 h-[380px] hidden md:block lg:block lg:h-[550px] object-contain pointer-events-none"
           />
 
           <div className="overflow-hidden whitespace-nowrap">
@@ -178,12 +185,17 @@ function App() {
       <div className="mt-20 flex flex-col lg:flex-row items-center">
 
         {/* ABOUT IMAGE */}
-        <div className="relative w-full lg:w-1/3 h-[300px] md:h-[450px] lg:h-[500px] overflow-hidden flex items-center justify-center">
+        <div className="relative w-full lg:w-1/3 h-[330px] md:h-[450px] lg:h-[500px] overflow-hidden flex items-center justify-center">
 
           <img
             src={Avatar2}
             alt=""
-            className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 z-20 h-[280px] md:h-[450px] lg:h-[550px] object-contain pointer-events-none"
+            className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 z-20 h-[280px] hidden md:block lg:h-[550px] object-contain pointer-events-none"
+          />
+          <img
+            src={mobile2}
+            alt=""
+            className="absolute fade-image left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 z-20 h-[400px] block md:hidden lg:block lg:h-[550px] object-contain pointer-events-none"
           />
 
           <div className="overflow-hidden whitespace-nowrap">

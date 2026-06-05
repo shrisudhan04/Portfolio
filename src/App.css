@@ -40,3 +40,16 @@
 .text-justify{
   text-align: justify;
 }
+.fade-image {
+  mask-image: linear-gradient(
+    to bottom,
+    black 60%,
+    transparent 100%
+  );
+
+  -webkit-mask-image: linear-gradient(
+    to bottom,
+    black 90%,
+    transparent 100%
+  );
+}
