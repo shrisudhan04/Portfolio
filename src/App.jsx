@@ -12,6 +12,7 @@ import react from "./assets/Image/React.png";
 import spring from "./assets/Image/Spring.png";
 import mysql from "./assets/Image/mysql.png";
 import java from "./assets/Image/java.png";
+import pro1 from "./assets/Image/pro1.png";
 
 function App() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -274,7 +275,7 @@ function App() {
         <div className="text-xl md:text-xl lg:text-xl text-[#C70E1A] font-menu">
           Skills
         </div>
-        <div className="text-2xl md:text-5xl lg:text-5xl text-white font-nav font-bold">
+        <div className="text-2xl md:text-3xl lg:text-4xl text-white font-nav font-bold">
           Technical Skills
         </div>
         <div className="relative overflow-hidden w-full py-8">
@@ -315,7 +316,104 @@ function App() {
           </div>
         </div>
       </div>
-    </div>
+
+      {/* Project */}
+      <div className="projects">
+        <div className="font-nav text-[#C70E1A] text-xl md:text-2xl lg:text-xl px-10">
+          Projects
+        </div>
+        <div className="px-10 text-white text-3xl md:text-5xl lg:text-4xl font-nav font-bold">
+          My Recent Projects
+        </div>
+        <div className="project-list px-10 py-8 flex gap-8 overflow-x-auto">
+            <div className="relative w-80 h-auto rounded-xl overflow-hidden bg-white/[0.03] backdrop-blur-xl shadow-[0_0_20px_rgba(255,0,0,0.08)] flex-shrink-0">
+                <div className="absolute -bottom-6 left-1/2 -translate-x-1/2 w-80 h-50 bg-red-500/30 blur-2xl"></div>
+                  <div className="relative z-10 flex flex-col h-full">
+                    <img src={pro1} alt="Project 1" className="w-80 h-50 object-cover rounded-3xl p-2" />
+                    <p className="text-white mt-1 font-nav text-sm md:text-base px-3 font-bold">
+                      Portfolio
+                    </p>
+                    <p className="text-white font-menu text-xs md:text-xs px-3 justify-center text-justify">
+                      A personal portfolio website built with React, showcasing my skills, projects, and experience in a visually appealing and user-friendly manner.
+                    </p>
+                    <div className="tools flex gap-2 px-3 pb-3 mt-auto">
+                      <span className="bg-white/10 font-menu text-white text-xs px-2 py-1 rounded">React</span>
+                      <span className="bg-white/10 font-menu text-white text-xs px-2 py-1 rounded">JavaScript</span>
+                      <span className="bg-white/10 font-menu text-white text-xs px-2 py-1 rounded">CSS</span>
+                    </div>
+                  </div>
+            </div>
+            <div className="relative w-80 h-auto rounded-xl overflow-hidden bg-white/[0.03] backdrop-blur-xl shadow-[0_0_20px_rgba(255,0,0,0.08)] flex-shrink-0">
+                <div className="absolute -bottom-6 left-1/2 -translate-x-1/2 w-80 h-50 bg-red-500/30 blur-2xl"></div>
+                  <div className="relative z-10 flex flex-col h-full">
+                    <img src={pro1} alt="Project 1" className="w-80 h-50 object-cover rounded-3xl p-2" />
+                    <p className="text-white mt-1 font-nav text-sm md:text-base px-3 font-bold">
+                      Portfolio
+                    </p>
+                    <p className="text-white font-menu text-xs md:text-xs px-3 justify-center text-justify">
+                      A personal portfolio website built with React, showcasing my skills, projects, and experience in a visually appealing and user-friendly manner.
+                    </p>
+                    <div className="tools flex gap-2 px-3 pb-3 mt-auto">
+                      <span className="bg-white/10 font-menu text-white text-xs px-2 py-1 rounded">React</span>
+                      <span className="bg-white/10 font-menu text-white text-xs px-2 py-1 rounded">JavaScript</span>
+                      <span className="bg-white/10 font-menu text-white text-xs px-2 py-1 rounded">CSS</span>
+                    </div>
+                  </div>
+            </div>
+            <div className="relative w-80 h-auto rounded-xl overflow-hidden bg-white/[0.03] backdrop-blur-xl shadow-[0_0_20px_rgba(255,0,0,0.08)] flex-shrink-0">
+                <div className="absolute -bottom-6 left-1/2 -translate-x-1/2 w-80 h-50 bg-red-500/30 blur-2xl"></div>
+                  <div className="relative z-10 flex flex-col h-full">
+                    <img src={pro1} alt="Project 1" className="w-80 h-50 object-cover rounded-3xl p-2" />
+                    <p className="text-white mt-1 font-nav text-sm md:text-base px-3 font-bold">
+                      Portfolio
+                    </p>
+                    <p className="text-white font-menu text-xs md:text-xs px-3 justify-center text-justify">
+                      A personal portfolio website built with React, showcasing my skills, projects, and experience in a visually appealing and user-friendly manner.
+                    </p>
+                    <div className="tools flex gap-2 px-3 pb-3 mt-auto">
+                      <span className="bg-white/10 font-menu text-white text-xs px-2 py-1 rounded">React</span>
+                      <span className="bg-white/10 font-menu text-white text-xs px-2 py-1 rounded">JavaScript</span>
+                      <span className="bg-white/10 font-menu text-white text-xs px-2 py-1 rounded">CSS</span>
+                    </div>
+                  </div>
+            </div>
+            <div className="relative w-80 h-auto rounded-xl overflow-hidden bg-white/[0.03] backdrop-blur-xl shadow-[0_0_20px_rgba(255,0,0,0.08)] flex-shrink-0">
+                <div className="absolute -bottom-6 left-1/2 -translate-x-1/2 w-80 h-50 bg-red-500/30 blur-2xl"></div>
+                  <div className="relative z-10 flex flex-col h-full">
+                    <img src={pro1} alt="Project 1" className="w-80 h-50 object-cover rounded-3xl p-2" />
+                    <p className="text-white mt-1 font-nav text-sm md:text-base px-3 font-bold">
+                      Portfolio
+                    </p>
+                    <p className="text-white font-menu text-xs md:text-xs px-3 justify-center text-justify">
+                      A personal portfolio website built with React, showcasing my skills, projects, and experience in a visually appealing and user-friendly manner.
+                    </p>
+                    <div className="tools flex gap-2 px-3 pb-3 mt-auto">
+                      <span className="bg-white/10 font-menu text-white text-xs px-2 py-1 rounded">React</span>
+                      <span className="bg-white/10 font-menu text-white text-xs px-2 py-1 rounded">JavaScript</span>
+                      <span className="bg-white/10 font-menu text-white text-xs px-2 py-1 rounded">CSS</span>
+                    </div>
+                  </div>
+            </div>
+            <div className="relative w-80 h-auto rounded-xl overflow-hidden bg-white/[0.03] backdrop-blur-xl shadow-[0_0_20px_rgba(255,0,0,0.08)] flex-shrink-0">
+                <div className="absolute -bottom-6 left-1/2 -translate-x-1/2 w-80 h-50 bg-red-500/30 blur-2xl"></div>
+                  <div className="relative z-10 flex flex-col h-full">
+                    <img src={pro1} alt="Project 1" className="w-80 h-50 object-cover rounded-3xl p-2" />
+                    <p className="text-white mt-1 font-nav text-sm md:text-base px-3 font-bold">
+                      Portfolio
+                    </p>
+                    <p className="text-white font-menu text-xs md:text-xs px-3 justify-center text-justify">
+                      A personal portfolio website built with React, showcasing my skills, projects, and experience in a visually appealing and user-friendly manner.
+                    </p>
+                    <div className="tools flex gap-2 px-3 pb-3 mt-auto">
+                      <span className="bg-white/10 font-menu text-white text-xs px-2 py-1 rounded">React</span>
+                      <span className="bg-white/10 font-menu text-white text-xs px-2 py-1 rounded">JavaScript</span>
+                      <span className="bg-white/10 font-menu text-white text-xs px-2 py-1 rounded">CSS</span>
+                    </div>
+                  </div>
+            </div>
+        </div>
+        </div>
+     </div>
   );
 }
 
