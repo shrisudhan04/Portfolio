@@ -8,6 +8,10 @@ import left from "./assets/Image/leftArrow.png";
 import right from "./assets/Image/RightArrow.png";
 import mobile1 from "./assets/Image/MobileAvatar.png";
 import mobile2 from "./assets/Image/mobile2.png";
+import react from "./assets/Image/React.png";
+import spring from "./assets/Image/Spring.png";
+import mysql from "./assets/Image/mysql.png";
+import java from "./assets/Image/java.png";
 
 function App() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -162,7 +166,7 @@ function App() {
           <img
             src={mobile1}
             alt=""
-            className="absolute fade-image left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 z-20 h-[380px] hidden md:block lg:block lg:h-[550px] object-contain pointer-events-none"
+            className="absolute fade-image left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 z-20 h-[380px] block md:hidden lg:h-[550px] object-contain pointer-events-none"
           />
 
           <div className="overflow-hidden whitespace-nowrap">
@@ -195,7 +199,7 @@ function App() {
           <img
             src={mobile2}
             alt=""
-            className="absolute fade-image left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 z-20 h-[400px] block md:hidden lg:block lg:h-[550px] object-contain pointer-events-none"
+            className="absolute fade-image left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 z-20 h-[400px] block md:hidden  lg:h-[550px] object-contain pointer-events-none"
           />
 
           <div className="overflow-hidden whitespace-nowrap">
@@ -216,7 +220,7 @@ function App() {
         {/* ABOUT CONTENT */}
         <div className="flex-1 px-6 lg:px-0 lg:ml-20 mt-10 lg:mt-0">
 
-          <div className="text-3xl md:text-5xl lg:text-6xl font-menu text-white font-bold">
+          <div className="text-3xl md:text-5xl lg:text-6xl font-nav text-white font-bold">
             About Me
           </div>
 
@@ -233,9 +237,84 @@ function App() {
             </div>
           </div>
 
+         <div className="flex flex-wrap justify-start mt-5">
+            <div className="w-full md:w-1/2 xl:w-1/3 mb-4 pr-4">
+              <div className="card-border">
+                <div className="card-content font-bold md:text-base">
+                  <i className="fs-3 text-[#C70E1A] bi bi-person-fill"></i>
+                  Shri Sudhan
+                </div>
+              </div>
+            </div>
+
+            <div className="w-full md:w-1/2 xl:w-1/3 mb-4 pr-4">
+              <div className="card-border">
+                <div className="card-content">
+                  <i className="fs-3 text-[#C70E1A] bi bi-briefcase-fill"></i>
+                  3 Years Experience
+                </div>
+              </div>
+            </div>
+
+            <div className="w-full md:w-1/2 xl:w-1/3 mb-4">
+              <div className="card-border">
+                <div className="card-content">
+                  <i className="fs-3 text-[#C70E1A] bi bi-person-workspace"></i>
+                  Full Stack Developer
+                </div>
+              </div>
+            </div>
+          </div>
+
         </div>
       </div>
 
+      {/*Skills*/}
+      <div className="px-10 py-15">
+        <div className="text-xl md:text-xl lg:text-xl text-[#C70E1A] font-menu">
+          Skills
+        </div>
+        <div className="text-2xl md:text-5xl lg:text-5xl text-white font-nav font-bold">
+          Technical Skills
+        </div>
+        <div className="relative overflow-hidden w-full py-8">
+          <div className="marquee flex">
+
+            {[...Array(3)].map((_, setIndex) => (
+              <div key={setIndex} className="flex items-center gap-8 mr-8">
+                {[
+                  { img: react, name: "React" },
+                  { img: spring, name: "Spring Boot" },
+                  { img: mysql, name: "MySQL" },
+                  { img: java, name: "Java" },
+                ].map((tech, index) => (
+                  <div
+                    key={`${setIndex}-${index}`}
+                    className="relative w-[120px] h-[90px] rounded-xl overflow-hidden
+                              bg-white/[0.03] backdrop-blur-xl
+                              shadow-[0_0_20px_rgba(255,0,0,0.08)]
+                              flex-shrink-0"
+                  >
+                    <div className="absolute -bottom-6 left-1/2 -translate-x-1/2 w-16 h-16 bg-red-500/30 blur-2xl"></div>
+
+                    <div className="relative z-10 flex flex-col items-center justify-center h-full">
+                      <img
+                        src={tech.img}
+                        alt={tech.name}
+                        className="w-10 h-10 object-contain mt-2"
+                      />
+                      <p className="text-white text-xs mt-2 font-menu">
+                        {tech.name}
+                      </p>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            ))}
+
+          </div>
+        </div>
+      </div>
     </div>
   );
 }
