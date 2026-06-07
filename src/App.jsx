@@ -412,7 +412,79 @@ function App() {
                   </div>
             </div>
         </div>
+      </div>
+
+      {/* COntact */}
+      <div className="contact">
+        <div className="font-nav text-white text-4xl font-bold px-5">Contact</div>
+        <div className="content px-5 mt-5">
+          <div className="w-full max-w-3xl mx-auto">
+
+      <form className="space-y-4">
+
+        {/* Name & Email */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+
+          {/* Name */}
+          <div className="flex items-center h-12 px-4 rounded-lg bg-white/[0.03] backdrop-blur-xl border border-white/10">
+            <i className="bi bi-person-fill text-[#C70E1A] text-lg"></i>
+
+            <input
+              type="text"
+              placeholder="Your Name"
+              className="ml-3 w-full bg-transparent text-white placeholder:text-gray-400 outline-none"
+            />
+          </div>
+
+          {/* Email */}
+          <div className="flex items-center h-12 px-4 rounded-lg bg-white/[0.03] backdrop-blur-xl border border-white/10">
+            <i className="bi bi-envelope-fill text-[#C70E1A] text-lg"></i>
+
+            <input
+              type="email"
+              placeholder="Your Email"
+              className="ml-3 w-full bg-transparent text-white placeholder:text-gray-400 outline-none"
+            />
+          </div>
+
         </div>
+
+        {/* Subject */}
+        <div className="flex items-center h-12 px-4 rounded-lg bg-white/[0.03] backdrop-blur-xl border border-white/10">
+          <i className="bi bi-chat-left-text-fill text-[#C70E1A] text-lg"></i>
+
+          <input
+            type="text"
+            placeholder="Subject"
+            className="ml-3 w-full bg-transparent text-white placeholder:text-gray-400 outline-none"
+          />
+        </div>
+
+        {/* Message */}
+        <div className="flex items-center h-12 px-4 rounded-lg bg-white/[0.03] backdrop-blur-xl border border-white/10">
+  <i className="bi bi-person-fill text-[#C70E1A] text-lg"></i>
+
+  <input
+    type="text"
+    placeholder="Your Name"
+    className="ml-5 w-full bg-transparent text-white placeholder:text-gray-400 outline-none"
+  />
+</div>
+
+        {/* Button */}
+        <button
+          type="submit"
+          className="flex items-center gap-2 px-6 py-3 rounded-lg bg-[#C70E1A] text-white hover:bg-red-700 transition-all duration-300"
+        >
+          <i className="bi bi-send-fill"></i>
+          Send Message
+        </button>
+
+      </form>
+
+    </div>
+        </div>
+      </div>
      </div>
   );
 }
