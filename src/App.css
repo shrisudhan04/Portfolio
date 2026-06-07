@@ -126,3 +126,12 @@
     transform: translateX(-33.333%);
   }
 }
+/* index.css */
+::-webkit-scrollbar {
+  display: none;
+}
+
+* {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
